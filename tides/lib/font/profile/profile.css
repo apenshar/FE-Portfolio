@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'profile';
+    src: url('profile.eot');
+    src: url('league-gothic.eot?#iefix') format('embedded-opentype'),
+         url('profile.woff') format('woff'),
+         url('profile.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}

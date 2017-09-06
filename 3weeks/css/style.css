@@ -1,0 +1,220 @@
+body {
+      margin: auto;
+        padding: 0;
+          font-size: 62.5%;
+            text-align: center;
+              font-family: 'Open-sans', sans-serif;
+                box-sizing: border-box;
+                  background: #efefef;
+              }
+
+              .hero {
+                    height: 65vh;
+                      min-height: 480px;
+                        color: #fff;
+                          background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-454943.jpg);
+                            background-size: cover;
+                        }
+                        .hero header img {
+                              zoom: 0.04;
+                                margin: 1.5em;
+                                  margin-right: 0;
+                                    float: left;
+                                }
+                                .hero header ul {
+                                      float: right;
+                                        width: 65%;
+                                          margin: 1.5em;
+                                            margin-left: 0;
+                                              padding: 9px;
+                                          }
+                                          .hero header ul:after {
+                                                display: block;
+                                                  content: "";
+                                                    clear: both;
+                                                }
+                                                .hero header ul a {
+                                                      text-decoration: none;
+                                                        color: #fff;
+                                                    }
+                                                    .hero header ul li {
+                                                          font-size: 1em;
+                                                            line-height: 2.5em;
+                                                              float: right;
+                                                                width: 16%;
+                                                                  min-width: 30px;
+                                                                    max-width: 98px;
+                                                                      padding: 5px 10px;
+                                                                        list-style: none;
+                                                                          border: 1px solid transparent;
+                                                                            border-radius: 2px;
+                                                                        }
+                                                                        .hero header ul li#last {
+                                                                              border: 1px solid #fff;
+                                                                          }
+                                                                          .hero header ul li#last:hover {
+                                                                                box-shadow: 1px 1px 20pxpx #e2f inset;
+                                                                                  background: #fff;
+                                                                                    color: #111;
+                                                                                      transition: 0.4s;
+                                                                                  }
+                                                                                  .hero header ul li#last:after {
+                                                                                        display: block;
+                                                                                          content: "";
+                                                                                            clear: both;
+                                                                                        }
+                                                                                        .hero h1 {
+                                                                                              margin: auto;
+                                                                                                font-size: 3em;
+                                                                                                  padding-top: 4em;
+                                                                                              }
+                                                                                              .hero h1:before {
+                                                                                                    display: block;
+                                                                                                      content: '';
+                                                                                                        clear: both;
+                                                                                                    }
+                                                                                                    .hero h2 {
+                                                                                                          font-size: 1.5em;
+                                                                                                            font-weight: 500;
+                                                                                                        }
+                                                                                                        .hero form {
+                                                                                                              padding: 1em;
+                                                                                                                position: relative;
+                                                                                                                  top: 4em;
+                                                                                                              }
+                                                                                                              .hero form input[type="text"] {
+                                                                                                                    padding: 1em;
+                                                                                                                      border: 0;
+                                                                                                                        width: 18em;
+                                                                                                                          border-radius: 4px 0 0 4px;
+                                                                                                                            background: #efefef;
+                                                                                                                              opacity: .8;
+                                                                                                                          }
+                                                                                                                          .hero form input[type="button"] {
+                                                                                                                                color: #fff;
+                                                                                                                                  padding: 1em;
+                                                                                                                                    border: 0;
+                                                                                                                                      width: 6em;
+                                                                                                                                        outline: none;
+                                                                                                                                          border-radius: 0 4px 4px 0;
+                                                                                                                                            background-color: lightgreen;
+                                                                                                                                        }
+
+                                                                                                                                        .numbers {
+                                                                                                                                              width: 80%;
+                                                                                                                                                margin: 0 auto;
+                                                                                                                                            }
+                                                                                                                                            .numbers ul {
+                                                                                                                                                  position: relative;
+                                                                                                                                                    top: -60px;
+                                                                                                                                                      background: #fff;
+                                                                                                                                                        padding: 0;
+                                                                                                                                                    }
+                                                                                                                                                    .numbers ul li {
+                                                                                                                                                          float: left;
+                                                                                                                                                            width: 25%;
+                                                                                                                                                              box-sizing: border-box;
+                                                                                                                                                                border-top: 1px solid #d9dada;
+                                                                                                                                                                  border-bottom: 1px solid #d9dada;
+                                                                                                                                                                    border-left: 1px solid #d9dada;
+                                                                                                                                                                      list-style: none;
+                                                                                                                                                                  }
+                                                                                                                                                                  .numbers ul li:last-child {
+                                                                                                                                                                        border-right: 1px solid #d9dada;
+                                                                                                                                                                    }
+                                                                                                                                                                    .numbers ul:after {
+                                                                                                                                                                          display: block;
+                                                                                                                                                                            content: "";
+                                                                                                                                                                              clear: both;
+                                                                                                                                                                          }
+                                                                                                                                                                          .numbers ul h2 {
+                                                                                                                                                                                font-size: 1.6em;
+                                                                                                                                                                                  padding: .6em 0 0 0;
+                                                                                                                                                                              }
+                                                                                                                                                                              .numbers ul h3 {
+                                                                                                                                                                                    padding: 0 0 .5em 0;
+                                                                                                                                                                                }
+
+                                                                                                                                                                                .how-it-works {
+                                                                                                                                                                                      position: relative;
+                                                                                                                                                                                        top: -3em;
+                                                                                                                                                                                    }
+                                                                                                                                                                                    .how-it-works h2 {
+                                                                                                                                                                                          font-size: 2em;
+                                                                                                                                                                                            text-transform: uppercase;
+                                                                                                                                                                                              padding: 0.5em 0;
+                                                                                                                                                                                          }
+                                                                                                                                                                                          .how-it-works h2:after {
+                                                                                                                                                                                                display: block;
+                                                                                                                                                                                                  content: "";
+                                                                                                                                                                                                    background: #efefef;
+                                                                                                                                                                                                      width: 6em;
+                                                                                                                                                                                                        height: .1em;
+                                                                                                                                                                                                          margin: .3em auto;
+                                                                                                                                                                                                      }
+                                                                                                                                                                                                      .how-it-works ul {
+                                                                                                                                                                                                            padding: 1em 0.3em;
+                                                                                                                                                                                                              position: absolute;
+                                                                                                                                                                                                                top: 4em;
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                            .how-it-works li {
+                                                                                                                                                                                                                  float: left;
+                                                                                                                                                                                                                    width: calc(100%/3);
+                                                                                                                                                                                                                      list-style-type: none;
+                                                                                                                                                                                                                        color: #555;
+                                                                                                                                                                                                                          position: relative;
+                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                      .how-it-works li:before {
+                                                                                                                                                                                                          position: absolute;
+                                                                                                                                                                                              display: block;
+                                                                                                                                                                                  content: "";
+                                                                                                                                                                      background: gray;
+                                                                                                                                                          width: 74%;
+                                                                                                                                              height: 1px;
+                                                                                                                                  top: 3%;
+                                                                                                                      left: 62%;
+                                                                                                          margin: 24px;
+                                                                                              margin-left: 1%;                
+
+
+                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                          .how-it-works li:last-child:before {
+                                                                                                                                                                                                                                                display: none;
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                            .how-it-works .number {
+                                                                                                                                                                                                                                                  font-size: 1.5em;
+                                                                                                                                                                                                                                                    border: 1px solid #555;
+                                                                                                                                                                                                                                                      width: 1em;
+                                                                                                                                                                                                                                                        height: 1em;
+                                                                                                                                                                                                                                                          display: block;
+                                                                                                                                                                                                                                                            margin: 1em auto;
+                                                                                                                                                                                                                                                              padding: 0.6em;
+                                                                                                                                                                                                                                                                border-radius: 50%;
+                                                                                                                                                                                                                                                                  margin-bottom: 20px;
+                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                              .how-it-works i {
+                                                                                                                                                                                                                                                                    font-size: 3.6em;
+                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                .how-it-works .icon-list {
+                                                                                                                                                                                                                                                                      color: #eca95a;
+                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                                  .how-it-works .icon-pencil {
+                                                                                                                                                                                                                                                                        color: #ac9cd2;
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                    .how-it-works .icon-user {
+                                                                                                                                                                                                                                                                          color: #4d99cb;
+                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                      .how-it-works h3 {
+                                                                                                                                                                                                                                                                            margin-top: 12px;
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                        .how-it-works p {
+                                                                                                                                                                                                                                                                              text-align: left;
+                                                                                                                                                                                                                                                                                width: 87%;
+                                                                                                                                                                                                                                                                                  position: relative;
+                                                                                                                                                                                                                                                                                    left: 50%;
+                                                                                                                                                                                                                                                                                      transform: translateX(-50%);
+                                                                                                                                                                                                                                                                                        margin: 5px;
+                                                                                                                                                                                                                                                                                          word-break: break-all;
+                                                                                                                                                                                                                                                                                            padding: 0;
+                                                                                                                                                                                                                                                                                        }
+

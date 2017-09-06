@@ -1,0 +1,217 @@
+$text-color: #4f4f4f;
+$second-text-color: #d9dada;
+$body-color: #efefef;
+$button-color: #6cdcac;
+$high-text-color: #fff;
+
+@mixin clearfix() {
+	&:after {
+		display: block;
+		content: "";
+		clear: both;
+	}
+}
+
+body {
+	margin: auto;
+	padding: 0;
+	font-size: 62.5%;
+	text-align: center;
+	font-family: 'Open-sans', sans-serif;
+	box-sizing: border-box;
+}
+
+.hero {
+ min-height: 40vh;
+ height: 480px;
+
+	background: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-454943.jpg');
+	background-size: cover;
+	color: #fff;
+	header {
+		img {
+			zoom: 0.04;
+			margin: 1.5em;
+			float: left;
+		}
+		ul {
+			float: right;
+	   margin: 1.5em;
+
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+			li{
+				
+		float: left;
+    padding: 2px 6px;
+    margin: .5em;
+    width: 20%;
+    min-width: 42px;
+    line-height: 2.5em;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    list-style: none;
+			} //li
+
+			li#last {
+				border: 1px solid #fff;
+				&:hover {
+					box-shadow: 1px 1px 1px #292 inset;
+				} //hover
+				&:after {
+					@include clearfix;
+				}
+			} //last-child
+
+		} //ul
+	}
+
+	h1 {
+    margin: auto;
+    font-size: 3em;
+    padding-top: 4em;
+	}
+	h2 {
+		    font-size: 1.5em;
+    font-weight: 500;
+	}
+
+	form {
+	 padding: 1em;
+    position: relative;
+    top: 4em;
+		input[type="text"] {
+			padding: 1em;
+			border: 0;
+			width: 18em;
+			border-radius: 4px 0 0 4px;
+			background: $body-color;
+			opacity: .8;
+		}
+		input[type="button"] {
+			color: #fff;
+			padding: 1em;
+			border: 0;
+			width: 6em;
+			outline: none;
+			border-radius: 0 4px 4px 0;
+			background-color: lightgreen;
+		}
+	} //form
+} //hero
+
+.numbers {
+	width: 80%;
+	margin: 0 auto;
+	
+	ul {
+		position: relative;
+		top: -60px;
+		background: #fff;
+		padding: 0;
+		li {
+			float: left;
+			width: 25%;
+			box-sizing: border-box;
+			border-top: 1px solid $second-text-color;
+			border-bottom: 1px solid $second-text-color;
+			border-left: 1px solid $second-text-color;
+			list-style: none;
+			&:last-child {
+				border-right: 1px solid $second-text-color;
+			}
+		}
+		@include clearfix;
+		h2 {
+			font-size: 1.6em;
+			padding: .6em 0 0 0;
+		}
+		h3 {
+			padding: 0 0 .5em 0;
+		}
+	}
+}
+.how-it-works {
+	position: relative;
+    top: -3em;
+	h2 {
+		font-size: 2em;
+		text-transform: uppercase;
+		padding: 0.5em 0;
+		&:after {
+			display: block;
+			content: "";
+			background: $body-color;
+			width: 6em;
+			height: .1em;
+			margin: .3em auto;
+		}
+	}
+	ul {
+    padding: 1em 0.3em;
+    position: absolute;
+    top: 4em;
+
+	}
+	li {
+		float: left;
+		width: calc(100%/3);
+		list-style-type: none;
+		color: gray;
+		position: relative;
+		&:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background: gray;
+    width: 76%;
+    height: 1px;
+    /* position: relative; */
+    top: 4%;
+    left: 50%;
+    margin: 20px;
+    margin-left: 16px;
+		}
+		&:last-child:before {
+			display: none;
+		}
+	}
+	.number {
+		    font-size: 1.5em;
+    border: 1px solid #efefef;
+    width: 1em;
+    height: 1em;
+    display: block;
+    margin: 1em auto;
+    padding: 0.6em;
+    border-radius: 50%;
+		    margin-bottom: 20px;
+	}
+	i {
+		font-size: 3.6em;
+	}
+	.icon-list {
+		color: #eca95a;
+	}
+	.icon-pencil {
+		color: #ac9cd2;
+	}
+	.icon-user {
+		color: #4d99cb;
+	}
+	h3{
+		    margin-top: 12px;
+	}
+	p {
+text-align:left;
+	width: 87%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px;
+    word-break: break-all;
+    padding: 0;
+	}
+}

@@ -1,0 +1,37 @@
+p {
+	font-family: 'Inconsolata';
+	font-size: 16px;
+
+	width: 90%;
+	margin: 2em auto;
+	padding: 2em 1em;
+
+	border-radius: 5px;
+}
+#time {
+	&:before {
+		content: '北京时间 : ';
+	}
+	// &:after{
+	// 	content: '1s 更新';
+	// 	position: relative;
+	// 	float:right;
+	// 	font-size:12px;
+	// }
+	background: #ccd;
+	box-shadow: 4px 8px 50px #ccc;
+}
+#count {
+	&:before {
+		content: '离考研还有 : ';
+	}
+	&:after {
+		// content: '1s 更新';
+		// position: relative;
+		// 		float:right;
+		// // right:-12em;
+		// font-size:12px;
+	}
+	background: #aaf;
+	box-shadow: 4px 8px 50px #aac;
+}

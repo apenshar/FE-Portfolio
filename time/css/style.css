@@ -1,0 +1,25 @@
+@charset "UTF-8";
+p {
+  font-family: 'Inconsolata';
+  font-size: 16px;
+  width: 90%;
+  margin: 2em auto;
+  padding: 2em 1em;
+  border-radius: 5px;
+}
+
+#time {
+  background: #ccd;
+  box-shadow: 4px 8px 50px #ccc;
+}
+#time:before {
+  content: '北京时间 : ';
+}
+
+#count {
+  background: #aaf;
+  box-shadow: 4px 8px 50px #aac;
+}
+#count:before {
+  content: '离考研还有 : ';
+}

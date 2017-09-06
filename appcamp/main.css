@@ -1,0 +1,228 @@
+@font-face
+{
+    font-family: 'PingHei';
+
+    src: url('fonts/PingHei-light.ttf');
+}
+html,
+body
+{
+    font-family: 'PingHei';
+    font-size: 62.5%;
+
+    margin: 0 ;
+    padding: 0 ;
+}
+
+
+header
+{
+    padding-top: 6%;
+    padding-bottom: 4%;
+}
+header,
+#hero
+{
+    height: 70px;
+    padding: 30px   50px;
+
+    background: #f1f5f7;
+}
+
+
+header img
+{
+    display: inline-block;
+    float: left;
+
+    height: 70px;
+
+    vertical-align: middle;
+}
+
+header > ul > li
+{
+    line-height: 50px;
+
+    float: left;
+
+    margin-left: 25px;
+    padding-left: 10px;
+
+    list-style: none;
+}
+
+
+/*header  li:after
+{
+    display: block;
+    content: '';
+    clear: both;
+}*/
+header a
+{
+    font-size: 1.5rem;
+
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+header a:hover
+{
+    color: gray;
+    border-bottom: 1px solid #000;
+}
+
+#hero
+{
+    display: block;
+
+    height: 35vh;
+    min-height: 665px;
+
+    text-align: center;
+
+    border-bottom: 2px solid #adb9b0;
+    background: #f1f5f7;
+}
+
+#hero h1
+{
+    font-size: 4rem;
+    font-weight: 500;
+
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+/*#hero b{
+    font-weight: bolder;
+}*/
+#hero img
+{
+    display: block;
+
+    width: 182px;
+    height: 222px;
+    margin: 4rem auto;
+    padding: 42px;
+    /*margin: auto;*/
+}
+
+#hero p
+{
+    font-size: 2.5rem;
+
+    width: 85%
+    max-width: 850px;
+    margin: 30px  auto ;
+
+    text-align: center;
+}
+
+
+
+#hero button
+{
+    line-height: 40px;
+
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 30px ;
+    padding: 5px 30px;
+
+    color: #484;
+    border: #fff solid 2px;
+    border-radius: 55px;
+    background: #8bd063;
+}
+
+a
+{
+    zoom: 1.5;
+
+    color: #fff;
+
+    text-decoration-line: none;
+}
+
+#hero button:hover
+{
+    background: #6bb446;
+    box-shadow: 1px 1px 40px #8bd067 inset;
+}
+main
+{
+    font-size: 3rem;
+
+    height: 20vh;
+    min-height: 407px;
+    /*margin-top: 10px;*/
+    padding: 18px;
+
+    text-align: center;
+
+    border-bottom: 2px solid #e5ebed;
+}
+
+h2
+{
+    font-weight: 200;
+
+    margin-top: 5rem;
+    padding: 2rem;
+}
+main .pic
+{
+    display: inline-block;
+
+    width: calc(100%/4.5);
+    margin-bottom: 20px;
+    /*margin: 15px ;*/
+    /*    padding: 10px ;*/
+}
+.pic img
+{
+    display: inline;
+    zoom: .4;
+}
+.pic p
+{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 38px;
+}
+footer
+{
+    margin: 10px;
+    padding: 20px;
+
+    text-align: center;
+}
+footer img
+{
+    zoom: .6;
+}
+footer p
+{
+    font-size: 2rem;
+
+    display: inline-block;
+
+    margin: 8px auto;
+}
+
+footer a
+{
+    font-size: 1rem;
+    padding: 2px;
+
+    text-decoration: none;
+
+    color: #000;
+}
+footer a:hover
+{
+    color: #123;
+}

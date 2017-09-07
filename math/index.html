@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>高等计算器</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+<div class="main">
+
+ <div class="expression">
+  <span style="margin-bottom:20px;">输入方程式</span>
+  <input type="text" id="expression" class="validate"  placeholder="i.e x^2+2x or x*x" >
+ </div>
+	
+ <div class="operation">
+  <span >选择求解方式</span>
+<select class="browser-default">
+    <option value="derive">求导</option>
+    <option value="integrate">积分</option>
+    <option value="factor">因式分解</option>
+	<option value="zeroes">二次函数求0值点</option>
+	<option value="sin">求sin值</option>
+	<option value="arcsin">求sin值角度</option>
+	<option value="cos">求cos值</option>
+	<option value="tan">求tan值</option>
+  </select>
+ </div>
+
+ <div class="button">
+  <button class="btn waves-effect waves-light" type="submit" name="action" style="width:190px;">说，你把爷爷藏哪了
+  </button>
+	</div>
+	
+
+		<div id="result">
+   <p>result</p>
+	<input type="text" id="final">
+</div>
+	
+ </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

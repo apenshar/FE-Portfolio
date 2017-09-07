@@ -1,0 +1,81 @@
+html{
+	box-sizing: border-box;
+	color:#fff;
+/* background:url(https://freephotos.cc/storage/preview/path/AiMr7BuljIvpPR04Vd9bB3DdspBhySnQ9hUkPE6q.jpeg) no-repeat; */
+}
+
+.main{
+	text-align:center;
+	height:90vh;
+  min-height: 700x;
+		background: url(https://www.bing.com/az/hprichbg/rb/GoldenTrevally_ZH-CN8976794546_1920x1080.jpg)  no-repeat;
+background-size:120% ;
+
+}
+
+.operation,
+.expression
+{
+	position: relative;
+	top:2em;
+	display:inline-block;
+	width:42%;
+height:125px;
+	vertical-align:middle;
+
+}
+#expression{
+        height: 4rem;
+
+
+}
+span{
+	display: inline-block;
+	height: 40px;
+}
+input{
+	display:inline-block;
+	text-align:center;
+color:#fff;
+}
+
+select{
+	display: inline-block;
+	position: relative;
+	top:23px;
+	background:transparent;
+	border:2px solid #26a69a;
+	color:#7ee3e6;
+}
+select:hover{
+		border:2px solid #26a64a;
+}
+
+
+.button{
+position: relative;
+top:3em;
+}
+#result{
+	position: relative;
+	top:-1em;
+	min-width:15em;
+	margin-top:20px;
+	color:#fff;
+	top: 32px;
+    font-size: 1.5em;
+	display:none;
+}
+
+#result p {
+  margin:5px auto;
+	font-weight:300;
+	font-size:25px;
+}
+
+#result input{
+ 	font-size:21px;
+	max-width:9em;
+}
+
+

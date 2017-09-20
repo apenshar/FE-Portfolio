@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+body {
+  background-color: #F3F1E9;
+}
+
+#intro {
+    text-align: center;
+    color: #4364df;
+    width: 372px;
+    height: 104px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    margin: auto;
+padding-bottom: 225px;
+}
+span {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+}
+span:nth-child(1){
+  margin-left:10px;
+}
+span:nth-child(2){
+    margin-left: 14px;
+}
+span:nth-child(3){
+  margin-left:22px;
+
+}
+span:nth-child(4){
+  margin-left:10px;
+}
+span:nth-child(5){
+  margin-left:10px;
+}
+.clock {
+  width: 330px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  zoom:1.25;
+}
+.mainbody {
+  width: 330px;
+  height: 60px;
+  background-color: #ACAAA0;
+  border-radius: 4px;
+  position: absolute;
+  box-shadow: inset 1px 1px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.backbody {
+  background-color: #8C897D;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.2),
+    inset 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.colont,
+.colonb {
+  background-color: #4E4D47;
+  border-radius: 1px;
+  position: absolute;
+    left:99px;
+    right: 218px;
+}
+
+.colont1,
+.colonb1 {
+  background-color: #4E4D47;
+  border-radius: 1px;
+  position: absolute;
+    left: 174px;
+    right: 143px;
+}
+.colont2,
+.colonb2 {
+  background-color: #4E4D47;
+  border-radius: 1px;
+  position: absolute;
+left: 248px;
+    right: 69px;
+
+}
+
+.colont,
+.colont1,
+.colont2{
+  top: 18px;
+  bottom: 27px;
+}
+.colonb,
+.colonb1,
+.colonb2{
+  top: 30px;
+  bottom: 16px;
+}
+div[class^='digit'], div[class*=' digit'] {
+    width: 29px;
+  height: 44px;
+  position: absolute;
+  top: 4px;
+  background-color: #4E4D47;
+  border-radius: 2px;
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+.digit1 {
+  left: 4px;
+}
+.digit2 {
+  left: 35px;
+}
+.digit3 {
+  left: 66px;
+}
+.digit4 {
+  left: 109px;
+}
+.digit5 {
+  left: 141px;
+}
+.digit6 {
+  left: 183px;
+}
+.digit7 {
+  left: 214px;
+}
+.digit8 {
+  left: 257px;
+}
+.digit9 {
+  left: 288px;
+}
+div[class^='num'], div[class*=' num'] {
+  font-family: 'Lato', sans-serif;
+  color: #FAFAFA;
+  font-size: 28px;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+}
+.brace {
+  z-index: 5;
+  background-color: #8C897D;
+  position: absolute;
+  top: 22px;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2),
+    0px -1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+div[class^='foot'], div[class*=' foot'] {
+  width: 8px;
+  height: 0px;
+  position: absolute;
+  border-top: 13px solid #BA8B6D;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  top: 60px;
+}
+.footl {
+  left: 20px;
+}
+.footr {
+  right: 20px;
+}
+div[class^='inner'], div[class*=' inner'] {
+  width: 5px;
+  height: 0px;
+  position: absolute;
+  border-top: 13px solid #CF9B7A;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  top: -13px;
+  left: 0px;
+}
+.shadow {
+  z-index: -1;
+  width:330px;
+  height: 4px;
+  position: absolute;
+  top: 51px;
+  background-color: transparent;
+  box-shadow: 0 20px 4px 0px rgba(0, 0, 0, 0.2);
+}

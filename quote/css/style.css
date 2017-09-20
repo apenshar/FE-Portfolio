@@ -16,17 +16,15 @@ h1{
 	font-size:1.2em;
 }
 .card {
- position: relative;
- left: 50%;
-
- width: 75vw;
- min-width: 380px;
- padding: 1.5em;
-
- transform: translateX(-50%);
- opacity: 1;
- border-radius: .3em;
- background: #fff;
+    position: relative;
+    left: 50%;
+    width: 69vw;
+    max-width: 700px;
+    padding: 1.5em;
+    transform: translateX(-50%);
+    opacity: 1;
+    border-radius: .3em;
+    background: #fff;
 }
 .quote, .bottom {
 	background: white;

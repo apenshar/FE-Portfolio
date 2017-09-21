@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Vue购物车-f</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="page-shopping-cart" id="shopping-cart">
+ <h2 class="cart-title">购物清单</h2>
+ <div class="cart-product-title clearfix">
+  <div class="td-check fl"><p> <input type="checkbox" class="check-span fl check-all" :class="{'check-true':isSelectAll}" @click="isSelectAll">全选</p></div>
+  <div class="td-product fl">商品</div>
+  <div class="td-num fl">数量</div>
+  <div class="td-price fl">单价(元)</div>
+  <div class="td-total fl">金额(元)</div>
+  <div class="td-do fl">操作</div>
+ </div>
+ <div class="cart-product clearfix">
+  <table>
+   <tbody> 
+    <tr v-for="(item,index) in productList">
+			<td class="td-check"><input type="checkbox" class="check-span" @click="item.select=!item.select" :class="{'check-true':item.select}"></td>
+     <td class="td-product"><img :src=item.pro_img alt="">
+      <div class="product-info">
+       <h6>{{item.pro_name}} </h6>
+       <p>品牌：{{item.pro_brand}}  产地：{{item.pro_place}}</p>
+       <p>规格/纯度:{{item.pro_purity}}   起定量：{{item.pro_min}}</p>
+       <p>配送仓储：{{item.pro_depot}}</p>
+      </div>
+      <div class="clearfix"></div>
+     </td>
+     <td class="td-num">
+      <div class="product-num">
+       <a href="javascript:;" class="num-reduce num-do fl" @click="item.pro_num--"><span>-</span></a>
+       <input type="text" class="num-input" v-model="item.pro_num">
+       <a href="javascript:;" class="num-add num-do fr" @click="item.pro_num++"><span>+</span></a>
+      </div>
+     </td>
+     <td class="td-price"> <p class="red-text">￥<span class="price-text">{{item.pro_price}}</span></p></td>
+     <td class="td-total"><p class="red-text">￥<span class="total-text">{{item.pro_price*item.pro_num}}</span></p></td>
+     <td class="td-do"><a href="javascript:;" class="product-delect" @click="deleteOneProduct">删除</a></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div class="cart-product-info">
+  <a class="delect-product" href="javascript:;" @click="deleteProduct"><span></span>删除所选商品</a>
+  <a class="keep-shopping" href="#"><span></span>继续购物</a>
+  <a class="btn-buy fr" href="javascript:;">去结算</a>
+  <p class="fr product-total">￥<span>{{ getTotal.totalPrice }}</span></p>
+  <p class="fr check-num"><span>{{getTotal.totalNum}}</span>件商品总计（不含运费）：</p>
+ </div>
+
+</div>
+  <script src='https://unpkg.com/vue@2.4.4/dist/vue.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

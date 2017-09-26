@@ -1,0 +1,575 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+    margin: 0;
+    font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
+    /*font: 14px/1.5 Helvetica,sans-serif;*/
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+}
+
+a{
+    text-decoration: none; 
+    color: #222;
+}
+
+.head {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+ background: #d43c33;
+ padding: 15px 5px;
+
+}
+
+.head h1 {
+    flex: 5;
+    margin: 0;
+    padding: 0 0 0 6px;
+}
+
+.head svg {
+  max-width: 54%;
+}
+.head .g-btn {
+  flex:2;
+  margin: auto;
+}
+.head .g-btn a{
+    font-size: 14px;
+
+    padding: 5px 15px;
+
+    color: #fff;
+    border: 1px solid #ffe;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+}
+
+
+.content .topbar {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 7vh;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content .topbar a {
+  flex: 1;
+  justify-content: space-around;
+  text-align: center;
+  align-self: flex-end;
+  border-bottom: 2px solid transparent;
+  
+}
+
+.content .topbar li {
+  padding-bottom: 8px;
+  margin: auto 20px;
+  border-bottom: 2px solid transparent;
+  transition: all cubic-bezier(0.4, 0, 1, 1) 0.1s;
+}
+.content .topbar li.active{
+  border-bottom: 2px solid #d43c33;
+/*  margin: auto 20px;*/
+
+}
+.content .topbar li:hover {
+  border-bottom: 2px solid #d43c33;
+}
+.recommend {
+ width: 100%;
+ margin:10px auto;
+padding-left: 3px;
+}
+.recommend h2 {
+  fonr-size : 1.5rem;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+  border-left: 4px solid #d43c33;
+  padding-left: 20px;
+}
+
+.recommend .recommend-detail {
+  display: inline-block;
+  position: relative;
+  width: calc(100%/3.11);
+  margin:auto;
+  padding: 0 ; 
+}
+.recommend .recommend-detail img {
+  width: 100%;
+}
+
+.recommend .recommend-detail span{
+    font-size: 10px;
+    position: absolute;
+    top: 2%;
+    left: 46%;
+    color: cornsilk;
+}
+
+.recommend .recommend-detail p {
+  font-size:13px;
+
+}
+
+.latest {
+  padding-left: 5px;
+}
+.latest h2{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 14px;
+  border-left: 4px solid #d43c33;
+  padding-left: 20px;
+}
+
+.latest .latest-detail {
+    height: 9vh;
+    padding-left: 10px;
+    background-color: #fff;
+     border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.latest .latest-detail a{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.latest .latest-detail a,
+.latest .latest-detail a:visited{
+  color:#222;
+  text-decoration: none; 
+}
+
+.latest .latest-detail .latest-text {
+  flex:3;
+}
+
+.latest .latest-detail p {
+  margin:0px;
+  padding:5px 0 5px 0;
+  font-size: 1rem;
+}
+.latest .latest-detail p small {
+  color: gray;
+  font-size: 0.9rem;
+} 
+.latest .latest-detail span {
+  color: gray;
+  font-size: 0.9rem;
+} 
+
+.latest .latest-detail i {
+    flex: 0.5;
+    align-self: center;
+    color: #727272;
+    zoom: 1.5;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height:35vh;
+ background: url(../img/recommand_bg_2x.png) no-repeat;
+}
+
+footer .footer-wrap{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+footer .logo {
+    margin: 5rem 0 1rem 0;
+}
+footer .logo svg {
+  width: 200px;
+}
+
+footer .app-link{
+
+}
+
+footer .app-link button{
+   line-height: 38px;
+    border: 1px solid #d33a31;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #d33a31;
+    margin: 0 0 5px 0;
+    padding:0 30px;
+    background: transparent;
+}
+
+footer .footer-wrap .app-link p{
+  font-size: 10px;
+  color:#888;
+
+}
+
+
+
+/* hotsong.html 样式*/
+.hot-hero {
+  height: 100%;
+  background: url(../img/hot_music_bg_2x.jpg) no-repeat;
+  background-size: 100%;
+  margin: 6px 0 6px 0 ;
+}
+
+.hot-hero .hot-icon {
+    position: relative;
+    left: 30px;
+    top: 24px;
+    width: 142px;
+    height: 67px;
+    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28…) no-repeat;
+    background-position: -24px -30px;
+    background-size: 166px 97px;
+ }
+ .hot-hero p {
+    color: #eee;
+    font-size: 13px;
+    margin: 40px 0 10px 32px;
+ }
+
+
+.hot-song .hot-detail {
+    height: 9.2vh;
+    padding-left: 10px;
+    background-color: #fff;
+     border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.hot-song .hot-detail a{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+}
+
+.hot-song .hot-detail .hot-num{
+  flex:0.4;
+  margin: auto;
+  font-size: 20px;
+}
+
+.top3{
+  color: #d33a31;
+}
+
+.hot-song .hot-detail .hot-text {
+  flex:3;
+}
+
+.hot-song .hot-detail .hot-text p {
+  margin:0px;
+  padding:11px 0 5px 0;
+  font-size: 1rem;
+}
+.hot-song .hot-detail .hot-text p small {
+  color: #615959;
+  font-size: 0.9rem;
+} 
+.hot-song .hot-detail .hot-text  span {
+  color: gray;
+  font-size: 0.9rem;
+} 
+
+.hot-song .hot-detail i {
+    flex: 0.5;
+    align-self: center;
+    color: #727272;
+    zoom: 1.5;
+}
+.content .more {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+
+/*search.html 样式*/
+.search-input{
+    display: flex;
+    height: 5vh;
+    margin: 12px auto;
+    border-radius: 20px;
+    background: #f2f2f2;
+    border-bottom: 1px solid rgba(0,0,0,0.01);
+}
+
+
+.search-input i{
+    padding-top: 6px;
+    padding-left: 13px;
+    flex: 0;;
+    color: #6e7878;
+}
+.search-input input{
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+}
+
+.hot-search:before{
+    display: block;
+    clear: both;
+    padding: 5px 0 5px 15px;
+    content: '热门搜索';
+}
+.hot-search p{
+    font-size: 15px;
+    color: #222;
+    display: inline-block;
+    margin: 4px;
+    padding: 4px 15px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    background: hsla(0, 0%, 97%, .3);
+}
+
+
+
+
+/*download.html 样式*/
+.down{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    background: url(../img/down-load.jpg) no-repeat 0 center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.down .down-title {
+  height: 10vh;
+
+
+}
+.down .down-title .down-tip {
+  font-size: 15px;
+  color: #fff;
+  margin-top: 20px;
+}
+.down .down-title .down-open,
+.down .down-title .down-open a {
+  color:#999;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.down .down-logo {
+  height: 90vh;
+}
+
+.down .down-logo svg {
+  position: relative;
+  top: 130px;
+  width: 140px;
+  fill:red;
+}
+
+.down .down-logo a{
+    font-size: 1.3rem;
+    display: block;
+    width: 50vw;
+    margin: auto;
+    margin-top: 9rem;
+    padding: .6rem;
+    color: #fff;
+    border: 1px solid #bdbbbb;
+    border-radius: 4px;
+    background: #250c0a;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>resume-fullpage</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.10/sweetalert2.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- <meta name="viewport" content="width=device-width"> -->
+<meta >
+<div id="fullpage">
+
+ <div class="section active" id="firstPage">
+  <span><img src="https://apenshar.com/avatar/3429.png" alt="avatar"></span>
+
+  <h2>谢智鹏</h2>
+  <h3>浙江海洋大学</h3>
+  <p>燕燕于飞,差池其羽</p>
+
+  <div>
+   <article>
+    <p class="icon"> 
+			<i data-feather="feather"></i>
+    </p>
+    <p>年龄:23</p>
+   </article>
+   <article>
+    <p class="icon">
+     <i data-feather="anchor"></i>
+    </p>
+    <p>学历:本科</p>
+   </article>
+   <article>
+    <p class="icon">
+     <i data-feather="map-pin"></i>
+    </p>
+    <p>城市:舟山</p>
+   </article>
+   <article>
+    <p class="icon">
+     <i data-feather="calendar"></i>
+    </p>
+    <p>状态:离职</p>
+   </article>
+  </div>
+ </div>
+
+
+ <div class="section" id="secondPage">
+  <h2>技术栈</h2>
+  <section class="skill">
+   <span>HTML5</span>
+   <span>CSS3</span>
+   <span>JavaScript</span>
+   <span>BootStrap4</span>
+   <span>D3.js</span>
+   <span>Linux</span>
+   <span>Font-awesome</span>
+   <span>jQuery</span>
+   <span>Ajax</span>
+   <span>Pug</span>
+   <span>Scss</span>
+   <span>Webpack</span>
+   <span>Git</span>
+   <span>Vim</span>
+   <span>Python</span>
+  </section>
+	 
+  <section class="stack">
+   <p>熟悉HTML5,CSS3,ES6，调试常见Bug</p>
+   <p>熟悉Goolge Fonts，jQuery,Bootstrap，等主流框架的使用</p>
+   <p>熟悉PC端,移动端开发,响应式布局，优化浏览体验</p>
+   <p>熟悉前端工程化、Webpack打包、Pug&Scss预编译工具的使用</p>
+   <p>熟悉Linux操作,Vim,ZSH环境安装配置以及Git实操</p>
+   <p>了解并搭建过Django博客,构建多线程爬虫</p>
+  </section>
+ </div>
+
+ <!-- 	项目经历 -->
+ <div class="section" id="thirdPage">
+  <div class="slide" id="p1">
+   <!-- 			 天气预报 -->
+   <section>
+    <h3>⛅天气预报jQuery版<a href="https://apenshar.com/weather"><i data-feather="external-link"></i></a></h3>
+    <p>基于Bootstrap，jQuery和雅虎天气API开发的实时天气预报，可同时显示多个地区，采用AJAX技术实现局部加载，响应式布局，对PC端和移动端适配性好，并实现Material Design的设计。经过此项目,熟练掌握div+css模型，使用Postman处理API解析JSON,娴熟地使用正则表达式。</p>
+   </section>
+   <!-- 			 wikipedia -->
+   <section>
+    <h3>🔎魔改版wikipedia搜索页<a href="https://apenshar.com/wikipedia"><i data-feather="external-link"></i></a></h3>
+    <p>调用Wikipedia 官方API，响应式布局设计，PC端和移动端优化，浏览体验较官方搜索页大幅提高，采用AJAX方法实时获取后台数据并局部渲染。对更加轻松地实现常见动效，，熟练掌握各项布局定位实现目的效果</p>
+   </section>
+  </div>
+
+  <div class="slide" id="p2">
+   <!-- 		ocr识别 -->
+   <section>
+    <h3>👁‍🗨在线OCR识别（限英文）<a href="https://apenshar.com/ocr"><i data-feather="external-link"></i></a></h3>
+    <p>调用Tesseract.js ,获取用户上传图片即可云端识别，准确率达90%以上。通过此项目，对API有更深层次的了解以及提升web开发审美能力,获取用户上传图片实操，以及jQuery加载，delegate方法绑定动态html，实现不刷新页面进行多次识别。</p>
+   </section>
+   <!-- 	quote-machine -->
+   <section>
+    <h3>📚Quote-Machine<a href="https://apenshar.com/quote"><i data-feather="external-link"></i></a></h3>
+    <p>随机的名人名言生成器，采用AJAX技术，获取后台数据实现card盒子模型局部更新。设计上选用更鲜艳大胆的配色，实现较为完美的动态交互，提升web设计美感。</p>
+   </section>
+
+  </div>
+
+  <div class="slide" id="p3">
+   <!-- 		web个人简历 -->
+   <section>
+    <h3>📝Web版简历<a href="https://apenshar.com/resume"><i data-feather="external-link"></i></a></h3>
+    <p>网站基于fullPage.js 库,静态响应式网页，熟练运用web布局设计网站。响应式，经过移动端优化调试，不会出现元素突出问题。</p>
+   </section>
+   <!-- 		高等计算器 -->
+   <section>
+    <h3>📐高等计算器<a href="https://apenshar.com/math"><i data-feather="external-link"></i></a></h3>
+    <p>使用newton.sh.now 的API接口,jQuery获取用户输入数据，传送云端计算，返回可视化结果。并用正则表达式优化了部分原生API调用问题，对Reg Exp了解更深入。</p>
+   </section>
+
+  </div>
+
+<!--   <div class="slide" id="p4">
+   3WEEKS 
+   <section>
+    <h3><a href="apenshar.com/3weeks"><i data-feather="external-link"></i></a></h3>
+    <p></p>
+   </section>
+
+  </div> -->
+
+
+
+ </div>
+
+ <div class="section" id="fourthPage">
+  <section class="evaluation">
+   <p>热爱开源，热衷协作,日用sf，github，codepen和c9</p>
+   <p>追求视觉效果极致的完美，死磕的处女座，喜欢dribbble</p>
+   <p>喜欢高性能，新花样，对Angular框架，PWA有极大兴致</p>
+   <p>熟练配置各种环境和插件，喜欢在线写代码</p>
+   <p>良好的团队合作精神，能迅速融入新的团队。</p>
+   <p>有强烈的责任感，性格开朗乐观，积极上进。</p>
+  </section>
+  <section class="contact">
+   <a href="" id="phone"><i  data-feather="phone"></i></a>
+   <a href="//github.com/apenshar"><i data-feather="github"></i></a>
+   <a onclick=""><i data-feather="codepen"></i></a>
+   <a href="mailto:1312488188@qq.com"><i data-feather="mail"></i></a></section>
+ </div>
+
+
+ <ul id="menu">
+  <li data-menuanchor="page1" class="active"><a href="#page1">关于我<i data-feather="user"></i></a></li>
+  <li data-menuanchor="page2"><a href="#page2">技能<i data-feather="sliders"></i></a></li>
+  <li data-menuanchor="page3"><a href="#page3">项目<i data-feather="activity"></i></a></li>
+  <li data-menuanchor="page4"><a href="#page4">评价<i data-feather="aperture"></i></a></li>
+ </ul>
+  <script src='js/jquery-git.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.extensions.min.js'></script>
+<script src='https://unpkg.com/feather-icons/dist/feather.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.10/sweetalert2.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
